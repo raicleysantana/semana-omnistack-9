@@ -1,0 +1,33 @@
+﻿1Instalando o nodeJs.
+1.1 - Instalar o Chocolatey 
+ 	https://chocolatey.org/install
+Executando no power Shell:
+	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString		('https://chocolatey.org/install.ps1'))
+1.2 instalando o Node:
+	cinst nodejs.install 10.16.3
+1.3 instalando Yarn:
+	https://yarnpkg.com/en/docs/install#windows-stable
+	cinst install yarn
+	vendo qual versão do yarn: yarn --v
+
+2.1 - Instalar visual code
+	Instalar extensao dracula
+	Instalar extensao material icon theme
+	Instalar extensao rockseat reactJs ReactNative
+	Download fire Code.
+2.1 Configuracoes para o visual code
+    "terminal.integrated.rendererType": "dom",
+    "files.autoSave": "off",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "editor.fontFamily" : "Fira Code",
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "Dracula",
+    "editor.fontSize": 18,
+    "editor.lineHeight": 24,
+
+2.2 Criando projeto
+	Abra o terminal e digite yarn global add create-react-app
+	create-react-app meu_projeto
+		
