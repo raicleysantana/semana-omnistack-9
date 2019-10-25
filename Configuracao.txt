@@ -30,4 +30,10 @@ Executando no power Shell:
 2.2 Criando projeto
 	Abra o terminal e digite yarn global add create-react-app
 	create-react-app meu_projeto
-		
+
+2.3 Criando o backend
+	yarn init -y  : Serve para criar package.json  
+	yarn add express
+	yarn add nodemon -D : Instalando dependencia
+	yarn add mongose : dependencia do mongodb
+			
