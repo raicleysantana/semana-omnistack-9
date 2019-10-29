@@ -35,5 +35,6 @@ Executando no power Shell:
 	yarn init -y  : Serve para criar package.json  
 	yarn add express
 	yarn add nodemon -D : Instalando dependencia
-	yarn add mongose : dependencia do mongodb
+	yarn add mongoose : dependencia do mongodb
+	yarn add multer : dependencia que aceita envio de multipart
 			
