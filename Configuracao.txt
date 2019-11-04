@@ -37,4 +37,7 @@ Executando no power Shell:
 	yarn add nodemon -D : Instalando dependencia
 	yarn add mongoose : dependencia do mongodb
 	yarn add multer : dependencia que aceita envio de multipart
-			
+	yarn add cors : dependencia para acessar o dados via api
+
+2.4 Adionando dependências no frontend
+	yarn add react-router-dom			

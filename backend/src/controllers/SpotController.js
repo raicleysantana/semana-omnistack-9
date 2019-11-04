@@ -11,7 +11,7 @@ module.exports = {
 
     async store(req,res){
         const { filename } = req.file;
-        const { company, techs, price } = req.body
+        const { company, techs, price } = req.body;
         const { user_id } = req.headers;
 
         const user = await User.findById(user_id);
