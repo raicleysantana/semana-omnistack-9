@@ -41,3 +41,10 @@ Executando no power Shell:
 
 2.4 Adionando dependências no frontend
 	yarn add react-router-dom			
+
+
+3. Criando versão mobile
+	Adionando dependêncicas
+		- npm install -g expo-cli
+		- expo init mobile
+		- yarn add react-navigation
