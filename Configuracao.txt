@@ -48,3 +48,5 @@ Executando no power Shell:
 		- npm install -g expo-cli
 		- expo init mobile
 		- yarn add react-navigation
+		- yarn add axios
+		
