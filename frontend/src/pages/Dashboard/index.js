@@ -32,16 +32,28 @@ export default function Index() {
         loadSpots();
 
     }, []);
+
+    async function handleAccept(id){
+        await api.post(`/bookings/${id}/approvals`);
+
+        setRequests(requests.filter(request => request._id != id));
+    }
+    
+    async function handleReject(id){
+        await api.post(`/bookings/${id}/rejections`);
+
+        setRequests(requests.filter(request => request._id != id));
+    }
     return (<>
         <ul className="notifications">
     
             {requests.map(request => (
                 <li key={request._id} >
                     <p>
-                        <strong>{request.user.email}</strong> está solicitando uma reserva em
-                        <strong>{request.user.company}</strong> para a data: <strong>{request.user.data}</strong>
-                        <button className="accept">ACEITAR</button>
-                        <button className="reject">REJEITAR</button>
+                        <strong>{request.user.email}</strong> está solicitando uma reserva em 
+                        <strong>{request.spot.company}</strong> para a data: <strong>{request.date}</strong> 
+                        <button className="accept" onClick={() => handleAccept(request._id)}>ACEITAR</button>
+                        <button className="reject" onClick={() => handleReject(request._id)}>REJEITAR</button>
                     </p>
                 </li>
             ))}

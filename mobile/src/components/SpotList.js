@@ -13,7 +13,7 @@ import api from '../services/api';
             });
 
             setSpots(response.data);
-            console.log(response.data);
+           
         }
 
         loadSpots();

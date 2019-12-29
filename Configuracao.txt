@@ -49,6 +49,7 @@ Executando no power Shell:
 		- expo init mobile
 		- yarn add react-navigation
 		- yarn add axios
+		- yarn add socket.io-client
 
 4. Criando o Realtime
 			yarn add socket.io
